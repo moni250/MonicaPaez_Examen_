@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace MonicaPaez_Examen
 {
@@ -10,7 +8,10 @@ namespace MonicaPaez_Examen
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new vistaLogin());
+            /*Comentario*/
+            /*{ BarBackgroundColor = Color.FromRgb(40, 72, 170), BarTextColor = Color.BlueViolet };*/
         }
 
         protected override void OnStart()
